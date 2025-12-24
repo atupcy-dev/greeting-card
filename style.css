@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 40px;
+    text-align: center;
+    background-color: brown;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    max-width: 400px;
+    padding: 40px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px gray;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    background-color: khaki;
+    transform: scale(1.1);
+}
+
+h1::before {
+    content: "🎉 ";
+}
+
+h1::after {
+    content: " 🎉";
+}
+
+.message {
+    font-size: 1.2em;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.card-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-links button {
+    text-decoration: none;
+    font-size: 1em;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    background-color: midnightblue;
+    transition: background-color 0.3s ease;
+}
+
+.card-links button:hover {
+    background-color: orangered;
+}
+
+.card-links button:active {
+    background-color: midnightblue;
+}
+
+.card-links button:focus {
+    outline: 2px solid yellow;
+}
+
+.card-links button:visited {
+    color: crimson;
+}
+
+section {
+    margin: 20px auto;
+    max-width: 600px;
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+}
+
+section:hover {
+    transform: skewX(10deg);
+}
+
+section:target {
+    display: block;
+}
+
+.recipient input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
